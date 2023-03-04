@@ -1,0 +1,17 @@
+#mainContent {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+@media (max-width: 750px) {
+    #mainContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
