@@ -1,4 +1,5 @@
 import Rodal from "rodal";
+import styles from "./Modals.module.css";
 
 export const ModalError = ({state}: { state: any[] }) => {
     const [modalVisible, setModalVisible] = state;
@@ -7,7 +8,7 @@ export const ModalError = ({state}: { state: any[] }) => {
         <Rodal
             visible={modalVisible}
             onClose={() => setModalVisible(false)}
-            children={<Msg/>}
+            children={<Msg />}
             customStyles={modalStyles}
         />
     )
@@ -15,7 +16,7 @@ export const ModalError = ({state}: { state: any[] }) => {
 
 const Msg = () => {
     return (
-        <div style={{textAlign: "center"}}>
+        <div id={styles.msgError}>
             <h2> Ups! </h2>
             <h3> User not exists <span style={{color: "var(--error-color)"}}>or</span> Connection error </h3>
         </div>
