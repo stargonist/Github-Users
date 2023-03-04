@@ -7,7 +7,7 @@ import {useState} from "react";
 import {Form, UserCard} from "./components";
 import {UserObject} from "../../domain/valueObject";
 import 'rodal/lib/rodal.css';
-import {ModalUserNotExists} from "../components/ui/modals";
+import {ModalUserNotExists} from "../../application/components/ui/modals";
 import styles from "./Dashboard.module.css";
 
 const Dashboard = () => {

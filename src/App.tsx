@@ -1,7 +1,8 @@
 import {Route, Routes} from 'react-router-dom'
 import Dashboard from './pages/Dashboard/Dashboard'
 import './App.css'
-import {Header} from "./pages/components/Header/Header";
+import {Header} from "./application/components/Header/Header";
+import {Footer} from "./application/components/Footer/Footer";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Route path="/" element={<Dashboard/>}/>
                 <Route path="/:username" element={<Dashboard/>}/>
             </Routes>
+            <Footer />
         </>
     )
 }
