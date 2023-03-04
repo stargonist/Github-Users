@@ -7,7 +7,7 @@ import {useState} from "react";
 import {Form, UserCard} from "./components";
 import {UserObject} from "../../domain/valueObject";
 import 'rodal/lib/rodal.css';
-import {ModalUserNotExists} from "../../application/components/ui/modals";
+import {ModalError} from "../../application/components/ui/modals";
 import styles from "./Dashboard.module.css";
 
 const Dashboard = () => {
@@ -44,7 +44,7 @@ const Dashboard = () => {
             <div id={styles.mainContent}>
                 <Form state={[user, setUser, status, setStatus]}/>
                 <UserCard/>
-                <ModalUserNotExists state={[modalVisible, setModalVisible]}/>
+                <ModalError state={[modalVisible, setModalVisible]}/>
             </div>
         </UserContext.Provider>
     )

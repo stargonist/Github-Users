@@ -1,1 +1,1 @@
-export * from './ModalUserNotExists';
+export * from './ModalError';
