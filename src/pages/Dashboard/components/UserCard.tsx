@@ -39,7 +39,11 @@ export const UserCard = () => {
                 </div>
                 <div>
                     <strong> Blog: </strong>
-                    <span> {user?.blog} </span>
+                    <Link
+                    target="_blank"
+                    to={user.blog || ""}
+                    children={<> {user?.blog} </>}
+                    />
                 </div>
                 <div>
                     <strong> Followers: </strong>
