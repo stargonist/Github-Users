@@ -9,7 +9,7 @@ export const Footer = () => {
         <footer id={styles.footer}>
             <Link target="_blank" id={styles.logo} to={stargonistWeb}>
                 <img src={logo} alt="Stargonist Logo"/>
-                <strong> Stargonist Team </strong>
+                <strong> Stargonist </strong>
             </Link>
         </footer>
     )
