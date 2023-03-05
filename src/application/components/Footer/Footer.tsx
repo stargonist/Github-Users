@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 import logo from "../../../assets/codenet-team.png"
 
 export const Footer = () => {
-    const stargonistWeb = import.meta.env.VITE_STARGONIST_WEB;
+    const stargonistWeb = "https://stargonist.netlify.app/"
 
     return (
         <footer id={styles.footer}>
